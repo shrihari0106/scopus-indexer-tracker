@@ -1,0 +1,24 @@
+[
+  {
+    "authors": [ ["Object"] ],
+    "_id": "608e96faeb214e48204d9564",
+    "title": "Observer-based boundary control for an asymmetric output-constrained flexible robotic manipulator",
+    "publisher": "Science China Information Sciences",
+    "type": "Letter",
+    "date": "2022-03-01",
+    "citedby": "4",
+    "email": "new@newmail.com",
+    "__v": "0"
+  },
+  {
+    "authors": [ ["Object"] ],
+    "_id": "608e9742eb214e48204d9565",
+    "title": "Insulin improves functional and metabolic recovery of reperfused working rat heart",
+    "publisher": "Annals of Thoracic Surgery",
+    "type": "Article",
+    "date": "1999-06-01",
+    "citedby": "67",
+    "email": "new@newmail.com",
+    "__v": "0"
+  }
+]

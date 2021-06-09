@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<title>HomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    min-height: 100%;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  </style>
+
+<style type="text/css">
+	
+	#content{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px red rgba(0,0,0,0.4),
+				 0px 8px 13px orange rgba(0,0,0,0.1),
+				 0px 18px 23px yellow rgba(0,0,0,0.1); 
+}
+body{
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+	color: rgb(19, 18, 18);
+}
+
+html{
+	height:100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+hr{
+	width:400px;
+	border:1px solid #0e0d0d;
+	border-bottom: 1px solid rgba(0,0,0,0.2); 
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: left;
+  background-color: transparent;
+  color: rgb(10, 10, 10);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+#maanav{
+  width: 55%;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(15, 14, 14);
+  background-color: rgb(250, 249, 249);
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+}
+
+#header-1{
+  padding: 20px;
+  margin: 20px 25px;
+  text-align: center;
+}
+
+#header-2{
+  padding: 20px;
+  margin: 20px 25px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.image{
+	width: 40%
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    border-style: ridge;
+  }
+}
+
+.column:hover{
+	background-color: rgb(25,25,25);
+}
+
+
+.panel-body{
+  color: black;
+}
+
+
+.panel-title{
+  width: 100%;
+  text-align: center;
+}
+
+.panel-title :hover{
+background-color: #555;
+}
+
+#FAQ {
+  text-align: center;
+  text-decoration-color: blue;
+  color: rgb(5, 5, 5);
+  font-weight: 200;
+  font-size: 3em;
+
+} 
+
+.panel-group{
+   width : 50%;
+   margin: auto;
+}
+</style> 
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">SCOPUS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/search" class="w3-bar-item w3-button" id="Search"><i class="fa fa-search"></i> SEARCH</a>
+      <a href="/profile" class="w3-bar-item w3-button" id="Profile"><i class="fa fa-book"></i> PROFILE</a>
+      <a href="#team" class="w3-bar-item w3-button" id="Team"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#contact" class="w3-bar-item w3-button" id="Contact"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="/users/logo" class="w3-bar-item w3-button" id="Logout"><i class="fa fa-sign-out"></i> LOGOUT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#profile" onclick="w3_close()" class="w3-bar-item w3-button">PROFILE</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#logout" onclick="w3_close()" class="w3-bar-item w3-button">LOGOUT</a>
+</nav>
+
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Hello <%= user.first_name %></span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+      <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </header>
+
+
+<!-- <div class="about-section" >
+  <h1 id="header-1">About Us</h1>
+  <p>Quickly find relevant and trusted research, identify experts, and access reliable data, metrics, and analytical tools for confident research strategy decisions – all from one database and one subscription.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div> -->
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+  <h3 class="w3-center" id="aboutus">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ABOUT US -->
+<div class="w3-container w3-black" style="padding:128px 16px" id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m5">
+      <br><br>
+      <h3>WHY WORK WITH US?</h3><br><br>
+      <ul>
+        <li class="w3-large">Identify emerging trends</li>
+        <li class="w3-large">Enhance visibility</li>
+        <li class="w3-large">Foster Collaboration</li>
+        <li class="w3-large">Support Funding</li>
+        <li class="w3-large">Empower Your Organization</li>
+      </ul><br><br>
+      <p class="w3-large"><a href="#team" class="w3-button w3-black"><i class="fa fa-th"> </i> Get to know us!</a></p>
+    </div>
+    <div class="w3-col m7">
+      <img class="w3-image w3-round-large" src="https://images.unsplash.com/photo-1616627408316-eb7361df4ea8?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+
+<!-- Team -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="w3-center" id="theteam">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+
+    <div class="w3-col s4 w3-margin-bottom w3-center">
+      <div class="w3-card w3-aqua">
+        <img src="karthick.jpeg" alt="GKC" style="width:100%">
+        <div class="w3-container">
+          <h3>G.Karthick Chandran</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>G Karthick Chandran is an amateur web developer playing the role of the team manager, creating the right balance the team requires.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col s4 w3-margin-bottom w3-center">
+      <div class="w3-card w3-aqua" >
+        <img src="aadhitya.jpg" alt="ATPS" style="width:100%">
+        <div class="w3-container">
+          <h3>Aadhitya Tejaswin P S</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Aadhitya Tejaswin is a web developer managing the core nuances of our website ith experience managing global projects and multi-million-dollar businesses.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col s4 w3-margin-bottom w3-center">
+      <div class="w3-card w3-aqua">
+        <img src="abhinaav.jpeg" alt="AMV" style="width:100%">
+        <div class="w3-container">
+          <h3>Abhinaav Maanav</h3>
+          <p class="w3-opacity">Art Director</p>
+          <p>Abhinaav Maanav is a test engineer managing the core part of this application testing its critical features, making this a dream team with his ever-growing skillset.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col s4 w3-margin-bottom w3-left">
+      <div class="w3-card w3-aqua">
+        <img src="leena.jpeg" alt="KLR" style="width:100%">
+        <div class="w3-container">
+          <h3>Karveti Leena Reddy</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Leena Reddy is the other test engineer managing the testing of our applications front-end, adding great strength to our group with her class of experience.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col s4 w3-margin-bottom w3-right">
+      <div class="w3-card w3-aqua">
+        <img src="prajapati.jpg" alt="SHP" style="width:100%">
+        <div class="w3-container">
+          <h3>Shri Hari Prajapati</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Shri Hari Prajapati is a web developer managing the front end structure of our website with invaluable experience designing pages for major global projects.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-teal w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">10+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">100+</span>
+    <br>Customers
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">1000+</span>
+    <br>Topics
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">10000+</span>
+    <br>Papers
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <h3 class="w3-center">FREQUENTLY ASKED QUESTIONS</h3><br><br>
+
+<div class="panel-group" id="accordion">
+  
+ <div class="panel panel-default">
+    <div class="panel-heading">
+        <button class="panel-title w3-center" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          How regulary is Scopus updated?</button>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body w3-center">Scopus is designed to upload new abstract records including cited and citing references on a daily basis.</div>
+    </div>
+  </div>
+  <br>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <button class="panel-title w3-center" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          How many journal titles does Scopus index actively/currently?</button>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body w3-center">Over 15.000 peer-reviewed journals is indexed currently.</div>
+    </div>
+  </div>
+  <br>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <button class="panel-title w3-center" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          Do you create own abstracts?</button>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body w3-center">We take the abstracts from the original publications if they provide an English language abstract and title. Occasionally, some publishers do not allow use of their abstracts. In these cases we construct an abstract ourselves.</div>
+    </div>
+  </div>
+  <br>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+        <button class="panel-title w3-center" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          How do I create or correct an affiliation profile?</button>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body w3-center">If you want to create an institutional profile or correct affiliation details, please contact Elsevier.</div>
+    </div>
+  </div>
+  <br>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+        <button class="panel-title w3-center" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          How do I use the Author Feedback Wizard?</button>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body w3-center">Use the Author Feedback Wizard to update the information provided on the Scopus Author details page.</div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- QUOTE -->
+<div class="w3-container w3-row w3-center w3-teal w3-padding-64">
+  <p class="w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-margin-right"></i>
+    "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking."</p>
+</div>
+
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center" id="contactus">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> AMRITA VISHWA VIDYAPEETHAM</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 9876543212</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> mail@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <br>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>GO TO TOP</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+</script>
+
+</body>
+</html>
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    min-height: 100%;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  </style>
+
+<style type="text/css">
+	
+	#content{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px red rgba(0,0,0,0.4),
+				 0px 8px 13px orange rgba(0,0,0,0.1),
+				 0px 18px 23px yellow rgba(0,0,0,0.1); 
+}
+body{
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+	color: rgb(19, 18, 18);
+}
+
+html{
+	height:100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+hr{
+	width:400px;
+	border:1px solid #0e0d0d;
+	border-bottom: 1px solid rgba(0,0,0,0.2); 
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: left;
+  background-color: transparent;
+  color: rgb(10, 10, 10);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+#maanav{
+  width: 55%;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(15, 14, 14);
+  background-color: rgb(250, 249, 249);
+  text-align: center;
+  cursor: pointer;
+  width: 10%;
+}
+
+#header-1{
+  padding: 20px;
+  margin: 20px 25px;
+  text-align: center;
+}
+
+#header-2{
+  padding: 20px;
+  margin: 20px 25px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.image{
+	width: 40%
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    border-style: ridge;
+  }
+}
+
+.column:hover{
+	background-color: rgb(25,25,25);
+}
+
+
+.panel-body{
+  color: black;
+}
+
+
+.panel-title{
+  width: 100%;
+  text-align: center;
+}
+
+.panel-title :hover{
+background-color: #555;
+}
+
+#FAQ {
+  text-align: center;
+  text-decoration-color: blue;
+  color: rgb(5, 5, 5);
+  font-weight: 200;
+  font-size: 3em;
+
+} 
+
+.panel-group{
+   width : 50%;
+   margin: auto;
+}
+</style> 

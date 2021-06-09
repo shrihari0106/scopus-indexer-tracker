@@ -1,0 +1,43 @@
+{
+    "abstracts-retrieval-response": {
+      "item": {
+        "ait:process-info": ["Object"],
+        "xocs:meta": ["Object"],
+        "bibrecord": ["Object"]
+      },
+      "affiliation": [ ["Object"], ["Object"] ],
+      "coredata": {
+        "srctype": "j",
+        "eid": "2-s2.0-0033001756",
+        "dc:description": "Background. Glucose, insulin, and potassium solution improves left ventricular function in refractory pump failure. Direct effects of insulin on the heart cannot be determined in vivo. We hypothesized that insulin has a direct positive inotropic effect on the reperfused heart. Methods. Isolated working rat hearts were perfused with buffer containing glucose (5 mmol/L) plus oleate (1.2 mmol/L). Hearts were subjected to 15 minutes of ischemia and reperfused with or without insulin (100 μU/mL) for 40 minutes. Epinephrine (1 μmol/L) was added for the last 20 minutes. Results. Hearts recovered 51.1% of preischemic cardiac power in the absence and 76.4% in the presence of insulin (p < 0.05). Whereas oleate oxidation remained unchanged, glucose uptake and oxidation increased during reperfusion with epinephrine (p < 0.01). This increase was significantly greater when hearts were reperfused in the presence of insulin (p < 0.01). Insulin also prevented an epinephrine-induced glycogen breakdown during reperfusion (p < 0.05). Conclusions. insulin has a direct positive inotropic effect on postischemic rat heart. This effect is additive to epinephrine and occurs without delay. Increased rates of glucose oxidation and net glycogen synthesis are more protracted.",
+        "pubmed-id": "10391275",
+        "prism:coverDate": "1999-06-01",
+        "prism:aggregationType": "Journal",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/0033001756",
+        "dc:creator": ["Object"],
+        "link": ["Array"],
+        "source-id": "20489",
+        "pii": "S0003497599003264",
+        "citedby-count": "67",
+        "prism:volume": "67",
+        "subtype": "ar",
+        "dc:title": "Insulin improves functional and metabolic recovery of reperfused working rat heart",
+        "openaccess": "0",
+        "prism:issn": "00034975",
+        "prism:issueIdentifier": "6",
+        "subtypeDescription": "Article",
+        "prism:publicationName": "Annals of Thoracic Surgery",
+        "prism:pageRange": "1682-1688",
+        "prism:endingPage": "1688",
+        "openaccessFlag": "false",
+        "prism:doi": "10.1016/S0003-4975(99)00326-4",
+        "prism:startingPage": "1682",
+        "dc:identifier": "SCOPUS_ID:0033001756"
+      },
+      "idxterms": null,
+      "language": { "@xml:lang": "eng" },
+      "authkeywords": null,
+      "subject-areas": { "subject-area": ["Array"] },
+      "authors": { "author": ["Array"] }
+    }
+  }

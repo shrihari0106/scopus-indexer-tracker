@@ -1,0 +1,16 @@
+body{
+    background:url('/homebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bodybox{
+    background-color: white;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    height:100%;
+    padding:50px;
+
+}
+

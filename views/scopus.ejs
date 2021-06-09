@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Scopus Search
+        </title>
+        <link rel = "stylesheet" type="text/css" href="/scopus.css">
+        <link rel="scopus" href="http://www.scopus.com/inward/record.url?partnerID=HzOxMe3b&scp=49549114022&origin=inward"/>
+    </head>
+    <body>
+
+<% var results = data['author-retrieval-response'][0] %>
+<% var coredata = data['author-retrieval-response'][0]['coredata'] %>
+<% var hindex = results['h-index'] %>
+<% var coauthor = results['coauthor-count'] %>
+<% var docu = coredata["document-count"] %>
+<% var cited = coredata["cited-by-count"] %>
+<% var citation = coredata["citation-count"] %>
+<div id="bodybox">
+    <h1>Scopus Search for the Author</h1>
+        <ul>
+            <li>
+                <h4>H-index = <%=hindex%></h4>
+                <h4>coauthors = <%=coauthor%></h4>
+                <h4>documents = <%=docu%></h4>
+                <h4>cited-by = <%=cited%></h4>
+                <h4>citations = <%=citation%></h4>
+            </li>
+        </ul>
+</div> 
+
+<%- include ('partials/footer.ejs'); -%>
+    

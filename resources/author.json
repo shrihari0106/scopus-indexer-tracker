@@ -1,0 +1,18 @@
+{
+    "author-retrieval-response": [
+      {
+        "@status": "found",
+        "@_fa": "true",
+        "coredata":{
+            "prism:url": "http://api.elsevier.com/content/author/author_id/7004212771",
+            "dc:identifier": "AUTHOR_ID:7004212771",
+            "document-count": "107",
+            "cited-by-count": "11404",
+            "citation-count": "14152"
+          },
+        "h-index": "34",
+        "coauthor-count": "180"
+      }
+    ]
+  }
+  
