@@ -99,7 +99,7 @@ router.post('/otp', async (req, res) =>{
   const mail = req.body.email
   await User.findOne({ email: mail }).then(user => {
     if (!user) {
-      pass.push({ msg : "Email is not registered"})
+      pass.push({ msg : "This Email is not registered"})
     }
   });
   if (pass.length>0){
