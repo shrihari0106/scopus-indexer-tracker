@@ -74,7 +74,8 @@ router.post('/query', (req, res) => {
 
   //Author Search
   if (quer.category === "Author"){
-    if (quer.query=="")
+    var reg = /^-?\d*\.?\d*$/
+    if (quer.query=="" || !(quer.query.match(reg)))
     {
         console.log("Empty keyword");
         res.render('search');
@@ -82,7 +83,7 @@ router.post('/query', (req, res) => {
     }
     else{
       const options1 = {
-        url: `http://api.elsevier.com/content/author?author_id=${quer.query}&view=metrics&apiKey=6b3c0f1da8cbe2e6596cc73867fd0965`,
+        url: `http://api.elsevier.com/content/author?author_id=${quer.query}&view=metrics&apiKey=${MY_API_KEY}`,
         method: 'GET',
         headers: {'Accept':'application/json', 'X-ELS-APIKey': MY_API_KEY}
       };
@@ -93,6 +94,7 @@ router.post('/query', (req, res) => {
         }else{
         console.log('test2')
         json = JSON.parse(body)
+        console.log(json)
         res.render('author', {data : json, auid : quer.query})
         }
     });
@@ -102,9 +104,10 @@ router.post('/query', (req, res) => {
 
   //scopus ID search
   else if(quer.category === "Publication"){ 
-    if (quer.query=="")
+    var reg = /^-?\d*\.?\d*$/
+    if (quer.query=="" || !(quer.query.match(reg)))
     {
-        console.log("Empty keyword");
+        console.log("Empty/Faulty keyword");
         res.render('search');
         
     }
@@ -131,7 +134,8 @@ router.post('/query', (req, res) => {
 
   //keyword search
   else if(quer.category === "Keyword"){
-    if (quer.query=="")
+    var letterNumber = /^[0-9a-zA-Z]+$/;
+    if (quer.query=="" || !(quer.query.match(letterNumber)))
    {
        console.log("Empty keyword");
        res.render('search');

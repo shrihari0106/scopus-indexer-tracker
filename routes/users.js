@@ -17,7 +17,7 @@ let transporter = nodemailer.createTransport({
 })
 
 router.get('/login',(req,res)=>{
-    res.render('Login')
+    res.render('login')
 })
 
 router.get('/register',(req,res)=>{
