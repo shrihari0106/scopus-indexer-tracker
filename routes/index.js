@@ -61,8 +61,10 @@ router.post('/editinfo', async (req, res) => {
   }
 })
 
-router.get('/deleteaccount', (req, res) => {
+router.get('/deleteaccount', async (req, res) => {
   var del;
+  const filter = {email : userinfo.email}
+  await User.findOneAndDelete(filter)
   del = { msg : "Your account has been deleted"}
   res.render('login', { del })
 })
