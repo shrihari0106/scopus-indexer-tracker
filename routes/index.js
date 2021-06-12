@@ -33,14 +33,15 @@ router.get('/', (req, res) =>{
 router.get('/search', (req, res)  => {
     res.render('search')
 })
-
+var Auth_list;
+var Pub_list;
 router.get('/profile', ensureAuthenticated, async (req, res) => {
-  var Pub_list;
+  // var Pub_list;
   const quer1 = await Publist.find({email : curr_mail}).then((pubs) => {
       Pub_list = pubs;
   })
   console.log(Pub_list)
-  var Auth_list;
+  //var Auth_list;
   const quer2 = await Aulist.find({email : curr_mail}).then((auths) => {
     Auth_list = auths;
 })
@@ -55,7 +56,7 @@ router.post('/editinfo', async (req, res) => {
     updates= { first_name : req.body.first_name, last_name : req.body.last_name}
     var updated = await User.findOneAndUpdate(filter, updates, {new : true })
     console.log(updated)
-    res.render('profile2', {user : updated, publist : Pub_list, aulist : Auth_list})
+    res.render('profile', {user : updated, publist : Pub_list, aulist : Auth_list})
   } catch (error) {
     console.log(error)
   }
